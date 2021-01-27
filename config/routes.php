@@ -17,6 +17,10 @@
       'id'=>'camp_gratuito',
       'view'=>'Camp Gratuito'
       ],
+      [
+      'id'=>'utente',
+      'view'=>'Utenti'
+      ],
   ]
 ];
  ?>

@@ -18,3 +18,7 @@ a {
 .logo {
   height: 80px;
 }
+
+.active {
+  background-color: lightgreen;
+}

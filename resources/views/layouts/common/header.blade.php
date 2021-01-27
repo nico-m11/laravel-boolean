@@ -6,7 +6,9 @@
   <div class="col-xs-9 container-list">
     <ul>
       @foreach(config('routes.routes') as $key)
-      <a href="{{ $key['id'] }}"><li>{{ $key['view'] }}</li></a>
+      <li class="{{ Route::currentRouteName() == $key['id'] ? 'active' : '' }}">
+      <a href="{{ $key['id'] }}">{{ $key['view'] }}</a>
+      </li>
       @endforeach
       <button type="button" name="button">Candidati Ora</button>
     </ul>

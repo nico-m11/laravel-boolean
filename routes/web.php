@@ -27,3 +27,5 @@ Route::get('/dopo_il_corso', function() {
 Route::get('/camp_gratuito', function() {
   return view('camp_free');
 })->name('camp_gratuito');
+
+Route::get('/utente', 'UserController@index')->name('utente');
