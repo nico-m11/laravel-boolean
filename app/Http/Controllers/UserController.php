@@ -7,9 +7,16 @@ use App\User;
 
 class UserController extends Controller
 {
-  public function index() {
+    public function index() {
 
-    $data = User::all();
-    return view('User', compact('data'));
+      $data = User::all();
+      return view('User', compact('data'));
   }
+
+    public function show($id) {
+
+      $dettagli_user = User::find($id);
+      return view('dettagli', compact('dettagli_user'));
+  }
+
 }

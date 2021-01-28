@@ -2,7 +2,7 @@
   return [
     'routes'=> [
       [
-      'id'=>'home',
+      'id'=>'/',
       'view'=>'Home'
       ],
       [

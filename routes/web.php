@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('welcome');
-})->name('home');
+});
+
 Route::get('/corso', function() {
   return view('corso');
 })->name('corso');
@@ -29,3 +30,5 @@ Route::get('/camp_gratuito', function() {
 })->name('camp_gratuito');
 
 Route::get('/utente', 'UserController@index')->name('utente');
+
+Route::get('/utente/{id}', 'UserController@show')->name('dettagli_user.show');
